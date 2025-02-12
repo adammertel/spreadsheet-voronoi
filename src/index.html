@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./main.css" />
+  </head>
+  <body>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            <label>spredsheet id</label>
+          </td>
+          <td>
+            <input id="input-spreadsheet" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>sheet number</label>
+          </td>
+          <td>
+            <input id="input-sheet" type="number" value="1" />
+          </td>
+        </tr>
+
+        <tr id="button-load">
+          <td>
+            <button>Load sheet</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label>column: coordinate X</label>
+          </td>
+          <td>
+            <select id="column-x" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>column: coordinate Y</label>
+          </td>
+          <td>
+            <select id="column-y" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label>column: region</label>
+          </td>
+          <td>
+            <select id="column-region" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>column: locality name</label>
+          </td>
+          <td>
+            <select id="column-name" />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div id="message"></div>
+    <div id="map"></div>
+    <br />
+    <div id="legend"></div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

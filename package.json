@@ -1,0 +1,32 @@
+{
+  "name": "spreadsheet-voronoi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url /spreadsheet-voronoi/ --out-dir docs --no-content-hash"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adammertel/spreadsheet-voronoi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adammertel/spreadsheet-voronoi/issues"
+  },
+  "homepage": "https://github.com/adammertel/spreadsheet-voronoi#readme",
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "parcel-bundler": "^1.3.1"
+  },
+  "dependencies": {
+    "@turf/collect": "^6.2.0",
+    "@turf/voronoi": "^6.2.0",
+    "g-sheets-api": "^1.4.1",
+    "leaflet": "^1.7.1",
+    "turf": "^3.0.14"
+  }
+}
