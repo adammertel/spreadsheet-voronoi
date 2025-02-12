@@ -34,9 +34,10 @@ const readSheet = () => {
   document.getElementById("message").innerHTML = "loading";
   reader(
     {
+      apiKey: document.getElementById("input-apikey").value,
       returnAllResults: true,
       sheetId: document.getElementById("input-spreadsheet").value,
-      sheetNumber: document.getElementById("input-sheet").value,
+      sheetName: document.getElementById("input-sheet").value,
     },
     (results) => {
       document.getElementById("message").innerHTML = "";
@@ -46,6 +47,7 @@ const readSheet = () => {
       populateMap();
     },
     (err) => {
+      console.log(err);
       document.getElementById("message").innerHTML = err;
       records = [];
     }

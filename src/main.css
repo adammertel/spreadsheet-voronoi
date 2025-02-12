@@ -4,6 +4,10 @@
   margin-top: 2em;
 }
 
+input {
+  width: 400px;
+}
+
 #message {
   background-color: beige;
   margin: 1em;
@@ -22,4 +26,12 @@ p.legend-line {
 }
 .legend-line .label {
   vertical-align: middle;
+}
+
+.legend-line .rectangle-color {
+  opacity: 0.5;
+}
+
+.leaflet-polygons-pane path {
+  fill-opacity: 0.5;
 }
